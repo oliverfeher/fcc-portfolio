@@ -1,0 +1,81 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: #E9EEF2;
+  }
+/* Base colors */
+
+/* Header */
+
+#nav-bar {
+    display: flex;
+    background-color: #326789;
+    position: fixed;
+    width: 100%;
+    font-family: 'Lalezar', cursive;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+.push {
+    margin-left: auto;
+}
+
+#nav li {
+    list-style: none;
+}
+#nav a {
+    display: block;
+    padding: 1rem;
+}
+#nav li:hover {
+    background-color: #E65C4F;
+    cursor: pointer;
+}
+#logo-img {
+    width: 35px;
+    margin-left: 30px;
+}
+#logo-text {
+    margin: auto 25px;
+    font-family: 'Lalezar', cursive;
+    font-size: 1.4rem;
+}
+#welcome-section {
+    padding-top: 50px;
+    background-color: #2A3950;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Carter One', cursive;
+}
+#title {
+    color: #E9EEF2;
+    font-family: 'Lalezar', cursive;
+    font-size: 5rem;
+}
+#highlight {
+    color: #E65C4F;
+}
+.title-desc {
+    font-size: 1.2rem;
+}
+#social-icons {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+.icons:hover {
+    transform: scale(1.1);
+}
+.icons {
+    width: 1.7rem;
+    margin: auto 10px;
+}
