@@ -1,1 +1,0 @@
-let gitHub = document.getElementById("github")
