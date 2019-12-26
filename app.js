@@ -23,20 +23,20 @@ project2.onmouseover = function() {
     title2.innerHTML = "Click to View!"
 }
 project2.onmouseout = function() {
-    title2.innerHTML = "Survey Form";
+    title2.innerHTML = "React App";
 }
 
 project3.onmouseover = function() {
     title3.innerHTML = "Click to View!"
 }
 project3.onmouseout = function() {
-    title3.innerHTML = "Survey Form";
+    title3.innerHTML = "Hide and Seek";
 }
 
 project4.onmouseover = function() {
     title4.innerHTML = "Click to View!"
 }
 project4.onmouseout = function() {
-    title4.innerHTML = "Survey Form";
+    title4.innerHTML = "Landing Page";
 }
 
