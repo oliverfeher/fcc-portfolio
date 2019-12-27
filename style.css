@@ -161,6 +161,21 @@
     -webkit-animation: text-flicker-in-glow 4s infinite both;
 	        animation: text-flicker-in-glow 4s infinite both;
   }
+#footer-content {
+    margin-top: 50px;
+    min-height: 5vh;
+    background-color: #326789;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+#footer-content p {
+    align-self: center;
+    padding: 20px;
+    font-family: 'Lalezar', cursive;
+    font-size: 1.2rem;
+}
 
 
 @media only screen and (max-width: 970px) {
@@ -186,9 +201,12 @@
     #about-me {
         flex-direction: column;
     }
+    #bio p {
+        font-size: 1rem;
+    }
     #nav a {
         padding: 15px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #logo-img {
         display: none;
@@ -198,9 +216,19 @@
         margin-top: 50px;
     }
     #about-me img {
-        width: 70%;
+        width: 80%;
         height: auto;
         margin: auto;
+    }
+    .project-grid {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #footer-content {
+        height: 3vh;
+    }
+    #footer-content p {
+        font-size: 1rem;
     }
 }
 
