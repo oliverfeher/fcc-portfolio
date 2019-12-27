@@ -103,6 +103,7 @@
     display: flex;
 }
 #bio {
+    align-self: center;
     margin-left: 100px;
 }
 #about-me img {
@@ -110,6 +111,11 @@
     border: 10px solid #326789;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7)
+}
+#about-me p {
+    font-family: 'Lalezar', cursive;
+    padding: 15px;
+    font-size: 1.3rem;
 }
 
 #projects-section h1 {
