@@ -191,7 +191,7 @@
 #contact-form {
     background-color: #326789;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    width: 700px;
+    width: 35%;
     height: 600px;
     align-self: center;
     z-index: 3;
@@ -202,16 +202,26 @@
 #send-msg {
     background-color: #E65C4F;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    width: 300px;
-    height: 400px;
+    width: 20%;
+    height: 300px;
     align-self: center;
     z-index: 4;
-    margin-right: -150px;
+    margin-right: -5%;
 }
 #form-container {
     display: flex;
     flex-direction: column;
     font-family: 'Lalezar', cursive;
+}
+#send-msg-desktop {
+    display: none;
+    background-color: #E65C4F;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    width: 20%;
+    height: 300px;
+    align-self: center;
+    z-index: 4;
+    margin-right: -5%;
 }
 
 
@@ -269,6 +279,18 @@
     }
     #footer-content p {
         font-size: 1rem;
+    }
+    #contact-section {
+        flex-direction: column;
+    }
+    #send-msg {
+        display: none;
+    }
+    #contact-form {
+        width: 50%;
+    }
+    #send-msg-desktop {
+        display: block;
     }
 }
 
