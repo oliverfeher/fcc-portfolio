@@ -21,7 +21,7 @@
     font-family: 'Lalezar', cursive;
     font-size: 1.2rem;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    
+    z-index: 5;
 }
 
 #nav {
@@ -89,33 +89,36 @@
     margin: auto 10px;
 }
 #about-section {
-    margin-top: 10px;
     width: 100%;
     min-height: 100vh;
     padding-top: 65px;
     background-color: #2A3950;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 #about-me {
     display: flex;
+    margin: auto;
+    justify-content: center;
 }
 #bio {
+    width: 50%;
     align-self: center;
     margin-left: 100px;
+    
 }
 #about-me img {
     height: 450px;
     border: 10px solid #326789;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7)
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    justify-self: center;
 }
 #about-me p {
     font-family: 'Lalezar', cursive;
     padding: 15px;
     font-size: 1.3rem;
+    text-align: left;
 }
 
 #projects-section h1 {
@@ -156,6 +159,7 @@
     
 }
 .code {
+    z-index: 1;
     color:#E65C4F;
     opacity: 0.4;
     -webkit-animation: text-flicker-in-glow 4s infinite both;
@@ -176,6 +180,40 @@
     font-family: 'Lalezar', cursive;
     font-size: 1.2rem;
 }
+#contact-section {
+    margin-top: 5%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+#contact-form {
+    background-color: #326789;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    width: 700px;
+    height: 600px;
+    align-self: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+#send-msg {
+    background-color: #E65C4F;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: 400px;
+    align-self: center;
+    z-index: 4;
+    margin-right: -150px;
+}
+#form-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lalezar', cursive;
+}
+
 
 
 @media only screen and (max-width: 970px) {
@@ -214,6 +252,8 @@
     #bio {
         margin: 0px;
         margin-top: 50px;
+        width: 90%;
+        
     }
     #about-me img {
         width: 80%;
