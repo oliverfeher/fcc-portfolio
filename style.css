@@ -291,6 +291,10 @@ textarea {
     background-color: #EAEFF3;
     color: #E65C4F;
 }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -377,7 +381,6 @@ textarea {
         font-size: 2rem;
         color: #EAEFF3; 
     }
-    #con
 }
 
 

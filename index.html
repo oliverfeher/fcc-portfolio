@@ -99,10 +99,13 @@
             <div id="form-container">
                 <p id="form-title">Send me text</p>
                 <p id="form-desc">Feel free to drop me a line below</p>
-                <input id="input-name" class="input-config" type="text" placeholder="Your name">
-                <input type="email" class="input-config" placeholder="Your e-mail">
-                <textarea placeholder="Enter your message" rows="10"></textarea>
-                <input id="submit" type="submit" value="Send message">
+                <form action="mailto:olcsee@gmail.com" method="POST" enctype="text/plain">
+                    <input id="input-name" class="input-config" name="name" type="text" placeholder="Your name">
+                    <input type="text" class="input-config" name="mail" placeholder="Your e-mail">
+                    <textarea placeholder="Enter your message" name="message" rows="10"></textarea>
+                    <input id="submit" type="submit" value="Send message">
+                </form>
+                
             </div>
         </div>
 
