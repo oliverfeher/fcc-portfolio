@@ -233,8 +233,7 @@
     text-align: center;
     margin-top: 5%;
     font-size: 2.5rem;
-    color: #EAEFF3;
-    
+    color: #EAEFF3; 
 }
 #contact-me-container {
     display: flex;
@@ -362,6 +361,23 @@ textarea {
         display: block;
         margin-top: 
     }
+    #contact-form {
+        margin: 0;
+        width: 92%;
+    }
+    #send-msg-desktop {
+        width: 92%;
+        margin: 0;
+        margin-top: 5%;
+        height: 400px;
+    }
+    #send-msg-desktop p {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 2rem;
+        color: #EAEFF3; 
+    }
+    #con
 }
 
 
