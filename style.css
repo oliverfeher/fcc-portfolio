@@ -88,6 +88,10 @@
     width: 1.7rem;
     margin: auto 10px;
 }
+.icons2 {
+    width: 2.1rem;
+    margin: auto 10px;
+}
 #about-section {
     width: 100%;
     min-height: 100vh;
@@ -186,7 +190,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    
+    font-family: 'Lalezar', cursive;
 }
 #contact-form {
     background-color: #326789;
@@ -203,7 +207,7 @@
     background-color: #E65C4F;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     width: 20%;
-    height: 300px;
+    height: 450px;
     align-self: center;
     z-index: 4;
     margin-right: -5%;
@@ -212,6 +216,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Lalezar', cursive;
+    margin-left: 5%;
 }
 #send-msg-desktop {
     display: none;
@@ -220,8 +225,72 @@
     width: 20%;
     height: 300px;
     align-self: center;
+    align-content: center;
     z-index: 4;
     margin-right: -5%;
+}
+#send-msg p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2.5rem;
+    color: #EAEFF3;
+    
+}
+#contact-me-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#contact-info {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+#contact-info li {
+    margin-bottom: 30px;
+}
+#contact-info-info {
+    list-style: none;
+    margin-top: 30px;
+}
+#contact-info-info li {
+    margin-bottom: 48px;
+    
+}
+#form-title {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+#form-desc {
+    margin-top: -20px;
+    color: black;
+}
+#input-name {
+    margin-top: 40px;
+}
+.input-config {
+    font-family: 'Lalezar', cursive;
+    width: auto;
+    height: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Lalezar', cursive;
+    color: black;
+}
+#submit {
+    background-color: #E65C4F;
+    border: none;
+    font-family: 'Lalezar', cursive;
+    font-size: 1.1rem;
+}
+#submit:hover {
+    cursor: pointer;
+    background-color: #EAEFF3;
+    color: #E65C4F;
 }
 
 
@@ -291,6 +360,7 @@
     }
     #send-msg-desktop {
         display: block;
+        margin-top: 
     }
 }
 
