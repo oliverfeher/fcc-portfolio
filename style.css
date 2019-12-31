@@ -381,6 +381,11 @@ form {
         font-size: 2rem;
         color: #EAEFF3; 
     }
+    #submit {
+        background-color: #E65C4F;
+        border: none;
+        font-family: 'Lalezar', cursive;
+        font-size: 1.1rem;
 }
 
 
