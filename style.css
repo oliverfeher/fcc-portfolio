@@ -386,4 +386,10 @@ form {
         border: none;
         font-family: 'Lalezar', cursive;
         font-size: 1.1rem;
-}
+    }
+    .anim-typewriter2 {
+        width: 13em;
+    }
+    .anim-typewriter {
+        width: 9.5em;
+    }
