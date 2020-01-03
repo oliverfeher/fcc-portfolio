@@ -72,9 +72,12 @@
 #highlight {
     color: #E65C4F;
 }
-.title-desc {
-    font-size: 1.2rem;
-}
+#welcome-section h2 {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
 #social-icons {
     margin-top: 20px;
     display: flex;

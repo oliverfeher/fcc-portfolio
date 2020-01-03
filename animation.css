@@ -1,54 +1,63 @@
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 2s steps(24) 1s 1 normal both,
-             blinkTextCursor 600ms steps(24) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 9em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-.line-1{
-  position: relative;
-  top: 50%;  
+
+.anim-typewriter {
   width: 9em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);    
+  -webkit-animation: type 4s steps(50, end);
+  animation: type 2s steps(40, end), 
+  blinkTextCursor 300ms steps(40) infinite ;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-.anim-typewriter2{
-  animation: typewriter2 2s steps(24) 1s 1 normal both,
-             blinkTextCursor2 600ms steps(24) infinite normal;
-  animation-delay: 4s;
+.anim-typewriter2 {
+  width: 12.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end), 
+  blinkTextCursor 300ms steps(40) infinite ;
+  -webkit-animation-delay: 2s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-@keyframes typewriter2{
-  from{width: 0;}
-  to{width: 12.5em;}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 0;
+  }
+  20% {
+    width: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
 }
-@keyframes blinkTextCursor2{
-  from{border-right-color: rgba(255,255,255,.75);}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #E65C4F;}
   to{border-right-color: transparent;}
 }
-.line-2{
-  position: relative;
-  top: 50%;  
-  width: 9em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);    
-}
+
 .code {
     z-index: 1;
     color:#E65C4F;
