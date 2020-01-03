@@ -47,4 +47,3 @@ project4.onmouseout = function() {
     title4.innerHTML = "Landing Page";
     title4.style.backgroundColor = "#326789"
 }
-
