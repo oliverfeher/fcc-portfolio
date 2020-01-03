@@ -190,3 +190,11 @@
       
     }
   }
+  @media only screen and (max-width: 970px) {
+    .anim-typewriter2 {
+      width: 14em;
+    }
+    .anim-typewriter {
+      width: 10.5em;
+    }
+  }
