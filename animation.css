@@ -9,7 +9,7 @@
 }
 
 .anim-typewriter2 {
-  width: 12.5em;
+  width: 12.9em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end), 

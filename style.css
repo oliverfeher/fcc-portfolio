@@ -293,7 +293,6 @@ form {
 }
 
 
-
 @media only screen and (max-width: 970px) {
 
     .project-grid {
@@ -301,13 +300,20 @@ form {
         grid-gap: 40px;
     }
     #nav {
-        justify-content: center; 
+        display: none;
+    }
+    #overlay-hamburger {
+        height: 20px;
+        padding: 10px;
+        margin-left: auto;
     }
     .push {
         margin: auto;
     }
     #logo-text {
-        display: none
+        display: block;
+        margin-left: 5px;
+        font-size: 1.2rem
     }
     #title {
         font-size: 5rem;
@@ -326,7 +332,7 @@ form {
         font-size: 1.2rem;
     }
     #logo-img {
-        display: none;
+      margin: 5px 5px 5px 10px;
     }
     #bio {
         margin: 0px;
@@ -363,7 +369,6 @@ form {
     }
     #send-msg-desktop {
         display: block;
-        margin-top: 
     }
     #contact-form {
         margin: 0;
@@ -385,5 +390,5 @@ form {
         background-color: #E65C4F;
         border: none;
         font-family: 'Lalezar', cursive;
-        font-size: 1.1rem;
+        font-size: 1.1 em;
     }
