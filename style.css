@@ -306,13 +306,67 @@ form {
         display: none;
     }
     #nav-bar {
-        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .overlay {
+        display: none;
+    }
+    .overlay img {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: auto;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .overlay ul {
+        align-content: flex-start;
+        list-style-type: none;
+        margin-left: 25px;
+        align-self: center;
+    }
+    .overlay li {
+        padding: 20px;
+        font-size: 1.3rem;
+        cursor: pointer;
+        opacity: 0;
     }
     #overlay-hamburger {
         height: 20px;
         padding: 10px;
         margin-left: auto;
         display: block;
+    }
+    #close-menu {
+        opacity: 0;
+        animation: show-x 1s 1s forwards;
+    }
+    .show-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: fixed;
+        background-color: black;
+        margin-left: 50%;
+        width: 50%;
+        min-height: 100vh;
+        z-index: 10;
+        transform: scaleX(0);
+        transform-origin: right;
+        animation: slide-menu 1s ease-in forwards;
+    }
+    .overlay li:nth-of-type(1) {
+        animation: menu-item-anim 1s 1.2s ease-in-out forwards;
+    }
+    .overlay li:nth-of-type(2) {
+        animation: menu-item-anim 1s 1.5s ease-in-out forwards;
+    }
+    .overlay li:nth-of-type(3) {
+        animation: menu-item-anim 1s 1.8s ease-in-out forwards;
+    }
+    .overlay li:nth-of-type(4) {
+        animation: menu-item-anim 1s 2.1s ease-in-out forwards;
     }
     .push {
         margin: auto;
@@ -345,7 +399,6 @@ form {
         margin: 0px;
         margin-top: 50px;
         width: 90%;
-        
     }
     #about-me img {
         width: 80%;
@@ -398,4 +451,31 @@ form {
         border: none;
         font-family: 'Lalezar', cursive;
         font-size: 1.1 em;
+    }
+    @keyframes slide-menu {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes show-x {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes menu-item-anim {
+        from {
+            transform: translateY(30%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
     }

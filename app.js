@@ -47,3 +47,21 @@ project4.onmouseout = function() {
     title4.innerHTML = "Landing Page";
     title4.style.backgroundColor = "#326789"
 }
+
+/* Mobile screen menu function*/
+
+let openMenu = document.getElementById("overlay-hamburger");
+let closeMenu = document.getElementById("close-menu");
+
+const showMenu = () => {
+    let overlay = document.querySelector(".overlay");
+    overlay.classList.add("show-menu");
+}
+openMenu.onclick = showMenu;
+
+const hideMenu = () => {
+    let overlay = document.querySelector(".overlay");
+    overlay.classList.remove("show-menu");
+}
+closeMenu.onclick = hideMenu;
+
