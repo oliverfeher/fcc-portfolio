@@ -306,8 +306,7 @@ form {
         display: none;
     }
     #nav-bar {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        width: 100%;
     }
     #overlay-hamburger {
         height: 20px;
