@@ -61,7 +61,25 @@ openMenu.onclick = showMenu;
 
 const hideMenu = () => {
     let overlay = document.querySelector(".overlay");
+    overlay.classList.add("show-menu-hiding");
     overlay.classList.remove("show-menu");
+    const removeClass = () => {
+        setTimeout(function() {overlay.classList.remove("show-menu-hiding"); }, 1200);
+    }
+    removeClass();
+    
+
 }
+let listHome = document.getElementById("home");
+let listAbout = document.getElementById("about");
+let listProjects = document.getElementById("projects");
+let listContact = document.getElementById("contact");
+
+listHome.onclick = hideMenu;
+listAbout.onclick = hideMenu;
+listProjects.onclick = hideMenu;
+listContact.onclick = hideMenu;
+
+
 closeMenu.onclick = hideMenu;
 

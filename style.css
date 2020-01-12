@@ -23,10 +23,12 @@
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
+.overlay {
+    display: none;
+}
 #overlay-hamburger {
     display: none;
 }
-
 #nav {
     display: flex;
     flex-direction: row;
@@ -309,9 +311,6 @@ form {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .overlay {
-        display: none;
-    }
     .overlay img {
         margin-top: 20px;
         margin-right: 20px;
@@ -321,16 +320,17 @@ form {
         cursor: pointer;
     }
     .overlay ul {
-        align-content: flex-start;
         list-style-type: none;
-        margin-left: 25px;
-        align-self: center;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
     }
     .overlay li {
         padding: 20px;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         cursor: pointer;
         opacity: 0;
+        font-family: 'Lalezar', cursive;
     }
     #overlay-hamburger {
         height: 20px;
@@ -344,8 +344,8 @@ form {
     }
     .show-menu {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
         position: fixed;
         background-color: black;
         margin-left: 50%;
@@ -355,6 +355,21 @@ form {
         transform: scaleX(0);
         transform-origin: right;
         animation: slide-menu 1s ease-in forwards;
+    }
+    .show-menu-hiding {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        background-color: black;
+        margin-left: 50%;
+        width: 50%;
+        min-height: 100vh;
+        z-index: 10;
+        transform: scaleX(0);
+        transform-origin: right;
+        animation: slide-menu-hide 1s ease-in forwards;
+        opacity: 0;
     }
     .overlay li:nth-of-type(1) {
         animation: menu-item-anim 1s 1.2s ease-in-out forwards;
@@ -479,3 +494,14 @@ form {
             opacity: 1;
         }
     }
+    @keyframes slide-menu-hide {
+        from {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+        to {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+    }
+}
