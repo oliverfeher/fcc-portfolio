@@ -22,6 +22,7 @@
     font-size: 1.2rem;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 5;
+    height: 10%;
 }
 .overlay {
     display: none;
@@ -334,6 +335,7 @@ form {
         padding: 10px;
         margin-left: auto;
         display: block;
+        align-self: center;
     }
     #close-menu {
         opacity: 0;
@@ -398,11 +400,7 @@ form {
         flex-direction: column;
     }
     #bio p {
-        font-size: 1rem;
-    }
-    #nav a {
-        padding: 15px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     #logo-img {
       margin: 5px 5px 5px 10px;
