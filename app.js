@@ -82,4 +82,3 @@ listContact.onclick = hideMenu;
 
 
 closeMenu.onclick = hideMenu;
-

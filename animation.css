@@ -1,4 +1,3 @@
-
 .anim-typewriter {
   width: 9em;
   -webkit-animation: type 4s steps(50, end);
@@ -9,7 +8,7 @@
 }
 
 .anim-typewriter2 {
-  width: 12.9em;
+  width: 12.5em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
   animation: type2 2s steps(40, end), 
@@ -62,7 +61,7 @@
     z-index: 1;
     color:#E65C4F;
     -webkit-animation: text-flicker-in-glow 6s linear infinite reverse both;
-	        animation: text-flicker-in-glow 6s linear infinite reverse both;
+            animation: text-flicker-in-glow 6s linear infinite reverse both;
 }
 
 @keyframes text-flicker-in-glow {
@@ -192,9 +191,9 @@
   }
   @media only screen and (max-width: 970px) {
     .anim-typewriter2 {
-      width: 14em;
+      width: 12.5em;
     }
     .anim-typewriter {
-      width: 10.5em;
+      width: 9em;
     }
   }
