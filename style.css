@@ -5,6 +5,9 @@
     color: #E9EEF2;
     text-decoration: none;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
       width: 100%;
       background-color: #2A3950;
